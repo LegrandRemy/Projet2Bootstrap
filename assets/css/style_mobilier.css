@@ -1,0 +1,94 @@
+/* Polices */
+/* Police pour textes */
+@font-face{
+    font-family: 'folksregular';
+    src: url('../fonts/folks-normal-webfont.woff2') format('woff2'),
+         url('../fonts/folks-normal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Polices pour titres, éléments importants etc */
+@font-face{
+    font-family: 'ffbold';
+    src: url('../fonts/Fashion-Fetish-Bold.woff') format('woff'),
+         url('../fonts/Fashion-Fetish-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Police pour liens dans la page */
+@font-face{
+    font-family: 'ffitalic';
+    src: url('../fonts/Fashion-Fetish-Italic.woff') format('woff'),
+         url('../fonts/Fashion-Fetish-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Police pour logo */
+@font-face{
+    font-family: 'Kerox';
+    src: url('../fonts/Kerox-NonCommercial.woff') format('woff'),
+        url('../fonts/Kerox-NonCommercial.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'ffbold','folksregular';
+}
+
+/* --------- DEBUT HEADER --------- */
+
+/* ------ Couleur de la navbar + shadow texte ----------- */
+.colornav{
+    background-color: #CB9263;
+    text-shadow: #000000 0.1em 0.1em 0.2em;
+}
+
+/* --------- Couleur blanche du texte --------*/
+#navbarExample01 ul li a{
+    color: #ffffff;
+    }
+
+    /*------- hover du texte seul ------*/
+#navbarExample01 ul li a:hover{
+    color: #4D2C37;
+    }
+
+/*Image de fond header*/
+header{
+    /* Linear gradient permet de mettre une opacité reduite sur l'image pour mieux voir le texte */
+        background-image: linear-gradient(#00000033, #00000033), url(../img/header_mobilier.jpg);
+        margin-top: 100px;
+        min-height: 100vh;
+        min-width: 98vw;
+    /*Position de l'image*/
+        display: flex;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    header>div{
+    /* placement texte taille header largeur */
+        width: 100%;
+    }
+    h1{
+        font-size: 300%;
+        margin-top: 20%;
+        margin-left: 20%;
+        color: white;
+    }
+    h2{
+        margin-left: 20%;
+        font-size: 30px;
+        color: white;
+    }
+    h3{
+        font-size: 20px;
+        color: #4D2C37;
+        text-align: center;
+    }
+    /* --------- FIN HEADER --------- */
