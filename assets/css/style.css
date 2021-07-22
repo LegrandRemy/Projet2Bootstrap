@@ -39,6 +39,9 @@
     text-decoration: none;
     font-family: 'ffbold','folksregular';
 }
+body{
+    background-color: #FAF2E5;
+}
 
 /* --------- DEBUT HEADER --------- */
 
@@ -85,9 +88,98 @@ header{
         font-size: 30px;
         color: white;
     }
-    h3{
-        font-size: 20px;
-        color: #4D2C37;
-        text-align: center;
-    }
     /* --------- FIN HEADER --------- */
+
+
+    /* --------- DEBUT VALEUR ENTREPRISE --------- */
+p{
+    font-family: 'folksregular';
+    font-size: 1rem;
+    color: #333333;
+}
+
+.titre_valeur{
+    font-size: 2rem;
+    color: #4D2C37;
+}
+
+.valor_card{
+    background-color: #FAF2E5;
+}
+
+.link_gallery{
+    background-color: #FAF2E5;
+    color:#684144;
+    font-size: 0.75rem;
+}
+
+hr{
+    background-color: #CB9263;
+}
+
+/* Fin VALEUR */
+
+/* DEBUT GALERIE */
+
+.line_gallery{
+    margin-left: 3%;
+    width: 30%;
+    color: #CB9263;
+    background-color: #CB9263;
+    border: 0;
+    height: 1px;
+}
+
+.gallery_titles{
+    margin-left: 3%;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(6, 15vw);
+    grid-template-rows: repeat(3, 25vh);
+    grid-gap: 2vh;
+    gap: 2vh;
+    margin : 2em
+}
+.gallery img{
+    display: none;
+}
+.custom_made_1{
+    background-image: url('../img/custom_made_1.jpg');
+    background-size: 100%;
+    grid-area: 1/1/3/4;
+    background-repeat: no-repeat;
+}
+.custom_made_2{
+    background-image: url('../img/custom_made_2.jpg');
+    background-size: 100%;
+    grid-area: 1/4/2/6;
+    background-repeat: no-repeat;
+}
+.custom_made_3{
+    background-image: url('../img/custom_made_3.jpg');
+    background-size: 100%;
+    grid-area: 1/6/2/7;
+    background-repeat: no-repeat;
+}
+.custom_made_4{
+    background-image: url('../img/custom_made_4.jpg');
+    background-size: 100%;
+    grid-area: 2/4/3/5;
+    background-repeat: no-repeat;
+}
+.custom_made_5{
+    background-image: url('../img/custom_made_5.jpg');
+    background-size: 100%;
+    grid-area: 2/5/3/7;
+    background-repeat: no-repeat;
+}
+.custom_made_6{
+    background-image: url('../img/custom_made_6.jpg');
+    background-size: 100%;
+    grid-area: 3/1/4/7;
+    background-repeat: no-repeat;
+}
+
+/* FIN GALERIE */
