@@ -104,7 +104,9 @@ footer{
             color: #ffffff;
             font-family: 'ffbold';
             }
-
+hr{
+    background-color: #CB9263;
+}
 
 
 @media screen and (max-width: 470px){
