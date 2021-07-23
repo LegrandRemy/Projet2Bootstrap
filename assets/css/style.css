@@ -1,225 +1,352 @@
 /* Polices */
 /* Police pour textes */
-@font-face{
+@font-face {
     font-family: 'folksregular';
     src: url('../fonts/folks-normal-webfont.woff2') format('woff2'),
-         url('../fonts/folks-normal-webfont.woff') format('woff');
+        url('../fonts/folks-normal-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 /* Polices pour titres, éléments importants etc */
-@font-face{
+@font-face {
     font-family: 'ffbold';
     src: url('../fonts/Fashion-Fetish-Bold.woff') format('woff'),
-         url('../fonts/Fashion-Fetish-Bold.woff2') format('woff2');
+        url('../fonts/Fashion-Fetish-Bold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
+
 /* Police pour liens dans la page */
-@font-face{
+@font-face {
     font-family: 'ffitalic';
     src: url('../fonts/Fashion-Fetish-Italic.woff') format('woff'),
-         url('../fonts/Fashion-Fetish-Italic.woff2') format('woff2');
+        url('../fonts/Fashion-Fetish-Italic.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
+
 /* Police pour logo */
-@font-face{
+@font-face {
     font-family: 'Kerox';
     src: url('../fonts/Kerox-NonCommercial.woff') format('woff'),
         url('../fonts/Kerox-NonCommercial.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
+
 /* Reset */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
+body{
+    background-color: #FAF2E5;
+}
 /* --------- DEBUT HEADER --------- */
 
 /* ------ Couleur de la navbar + shadow texte ----------- */
-.colornav{
+.colornav {
     background-color: #CB9263;
     text-shadow: #000000 0.1em 0.1em 0.2em;
 }
 
 /* --------- Couleur blanche du texte --------*/
-#navbarNav ul li a, h1, h2{
+#navbarNav ul li a,
+h1,
+h2 {
     color: #ffffff;
     font-family: 'ffbold';
-    }
-
-    /*------- hover du texte seul ------*/
-#navbarNav ul li a:hover{
-    color: #4D2C37;
-    }
-
-/*Image de fond header*/
-header{
-    /* Linear gradient permet de mettre une opacité reduite sur l'image pour mieux voir le texte */
-        background-image: linear-gradient(#57545433, #00000033), url(../img/header.jpg);
-        min-height: 100vh;
-    /*Position de l'image*/
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
 }
 
-    /* --------- FIN HEADER --------- */
-/* --------- DEBUT FOOTER --------- */
+/*------- hover du texte seul ------*/
+#navbarNav ul li a:hover {
+    color: #4D2C37;
+}
 
-footer{
+/*Image de fond header index*/
+header {
+    /* Linear gradient permet de mettre une opacité reduite sur l'image pour mieux voir le texte */
+    background-image: linear-gradient(#57545433, #00000033), url(../img/header.jpg);
+    min-height: 80vh;
+    /*Position de l'image*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* --------- FIN HEADER --------- */
+/* --------- DEBUT FOOTER --------- */
+footer {
     padding: 40px 60px;
     background-color: #A7745B;
     color: #ffffff;
 }
-.grill-container{
+
+.grill-container {
     display: grid;
     grid-template-columns: repeat(2, 90% 10%);
     grid-template-rows: 100%;
 }
-.text{
+
+.text {
     font-family: 'folksregular';
     font-size: 1.5rem;
     grid-area: 1/1/1/2;
 }
-.social-network{
+
+.social-network {
     grid-area: 1/2/1/3;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 /* --------- FIN FOOTER --------- */
-.lesmateriaux{
+
+/* --------- DEBUT materiaux --------- */
+.lesmateriaux {
     /* Linear gradient permet de mettre une opacité reduite sur l'image pour mieux voir le texte */
-        background-image: linear-gradient(#57545433, #00000033), url(../img/Image\ header.png);
-        min-height: 90vh;
+    background-image: linear-gradient(#57545433, #00000033), url(../img/Image\ header.png);
+    min-height: 70vh;
     /*Position de l'image*/
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-            color: #ffffff;
-            font-family: 'ffbold';
-            }
-hr{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titlecreations {
+    font-size: 3rem;
+    font-family: 'ffbold';
+}
+p {
+    font-family: 'folksregular';
+    font-size: 1rem;
+    color: #333333;
+}
+.titre_valeur {
+    font-size: 2rem;
+    color: #4D2C37;
+}
+.valor_card {
+    background-color: #FAF2E5;
+}
+.link_gallery {
+    background-color: #FAF2E5;
+    color: #684144;
+    font-size: 0.75rem;
+}
+hr {
     background-color: #CB9263;
 }
+/* Fin materiaux */
+
+/* DEBUT GALERIE de la presentation */
+.line_gallery {
+    margin-left: 3%;
+    /* width: 30%; */
+    color: #CB9263;
+    background-color: #CB9263;
+    border: 0;
+    height: 1px;
+}
+.gallery_titles {
+    margin-left: 3%;
+    margin-top: 8%;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 15vw);
+    grid-template-rows: repeat(3, 25vh);
+    grid-gap: 2vh;
+    gap: 2vh;
+    margin: 2em
+}
+.gallery img {
+    display: none;
+}
+.custom_made_1 {
+    background-image: url('../img/custom_made_1.jpg');
+    background-size: 100%;
+    grid-area: 1/1/3/4;
+    background-repeat: no-repeat;
+}
+.custom_made_2 {
+    background-image: url('../img/custom_made_2.jpg');
+    background-size: 100%;
+    grid-area: 1/4/2/6;
+    background-repeat: no-repeat;
+}
+.custom_made_3 {
+    background-image: url('../img/custom_made_3.jpg');
+    background-size: 100%;
+    grid-area: 1/6/2/7;
+    background-repeat: no-repeat;
+}
+.custom_made_4 {
+    background-image: url('../img/custom_made_4.jpg');
+    background-size: 100%;
+    grid-area: 2/4/3/5;
+    background-repeat: no-repeat;
+}
+.custom_made_5 {
+    background-image: url('../img/custom_made_5.jpg');
+    background-size: 100%;
+    grid-area: 2/5/3/7;
+    background-repeat: no-repeat;
+}
+.custom_made_6 {
+    background-image: url('../img/custom_made_6.jpg');
+    background-size: 100%;
+    grid-area: 3/1/4/7;
+    background-repeat: no-repeat;
+}
+/*----- Fin galerie presentation -------*/
+
+.colorform {
+    background-color: #CB9263;
+
+}
+
+.submitbtn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'folksregular';
+    color: #4D2C37;
+}
+.form-group {
+    font-family: 'folksregular';
+}
+
+/*Image de fond header notre mobilier*/
+section {
+    /* Linear gradient permet de mettre une opacité reduite sur l'image pour mieux voir le texte */
+    background-image: linear-gradient(#57545433, #00000033), url(../img/header_mobilier.jpg);
+    min-height: 70vh;
+    /*Position de l'image*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* --------- FIN HEADER notre mobilier --------- */
+
+/* DEBUT GALERIE MEUBLES CREATIONS */
+
+.line_gallery_2{
+    margin-left: 3%;
+    width: 80%;
+    color: #CB9263;
+    background-color: #CB9263;
+    border: 0;
+    height: 1px;
+}
+
+.gallery_titles_2{
+    margin-left: 40rem;
+    margin-top: 8%;
+    width: 250px;
+}
+
+.gallery_3{
+    display: grid;
+    grid-template-columns: repeat(2,40vw 50vw);
+    grid-template-rows: repeat(4, 10vh);
+    grid-gap: 2vh;
+    gap: 2vh;
+    margin : 2em
+}
+.gallery_3 img{
+    display: none;
+}
+.collection_thor_1{
+    background-image: url('../img//colection_thor_1.png');
+    background-size: 100%;
+    grid-area: 1/1/5/2;
+    background-repeat: no-repeat;
+}
+.collection_thor_2{
+    background-image: url('../img/collection_thor_2.png');
+    background-size: 100%;
+    width:51vw;
+    grid-area: 1/2/3/3;
+    background-repeat: no-repeat;
+}
+.collection_thor_3{
+    background-image: url('../img/collection_thor_3.png');
+    background-size: 100%;
+    width:51vw;
+    grid-area: 3/2/5/3;
+    background-repeat: no-repeat;
+}
+
+.gallery_2{
+    display: grid;
+    grid-template-columns: repeat(2,51vw 40vw);
+    grid-template-rows: repeat(4, 10vh);
+    grid-gap: 2vh;
+    gap: 2vh;
+    margin : 2em
+}
+.gallery_2 img{
+    display: none;
+}
+.collection_ivak_1{
+    background-image: url('../img/collection_ivak_3.png');
+    background-size: 100%;
+    width: 40vw;
+    grid-area: 1/2/5/3;
+    background-repeat: no-repeat;
+}
+.collection_ivak_2{
+    background-image: url('../img/collection_ivak_1.png');
+    background-size: 100%;
+    width:51vw;
+    grid-area: 1/1/3/2;
+    background-repeat: no-repeat;
+}
+.collection_ivak_3{
+    background-image: url('../img/collection_ivak_2.png');
+    background-size: 100%;
+    width:51vw;
+    grid-area: 3/1/5/2;
+    background-repeat: no-repeat;
+}
+
+.collection_ymir_1{
+    background-image: url('../img/collection_ymir_1.png');
+    background-size: 100%;
+    grid-area: 1/1/5/2;
+    background-repeat: no-repeat;
+}
+.collection_ymir_2{
+    background-image: url('../img/collection_ymir_2.png');
+    background-size: 100%;
+    width:51vw;
+    grid-area: 1/2/3/3;
+    background-repeat: no-repeat;
+}
+.collection_ymir_3{
+    background-image: url('../img/collection_ymir_3.png');
+    background-size: 100%;
+    width:51vw;
+    grid-area: 3/2/5/3;
+    background-repeat: no-repeat;
+}
+
+/* FIN GALERIE MEUBLES CREATIONS */
 
 
-            
-            
-            /* --------- DEBUT VALEUR ENTREPRISE --------- */
-            p{
-                font-family: 'folksregular';
-                font-size: 1rem;
-                color: #333333;
-            }
-            
-            .titre_valeur{
-                font-size: 2rem;
-                color: #4D2C37;
-            }
-            
-            .valor_card{
-                background-color: #FAF2E5;
-            }
-            
-            .link_gallery{
-                background-color: #FAF2E5;
-                color:#684144;
-                font-size: 0.75rem;
-            }
-            
-            hr{
-                background-color: #CB9263;
-            }
-            
-            /* Fin VALEUR */
-            
-            /* DEBUT GALERIE */
-            
-            .line_gallery{
-                margin-left: 3%;
-                width: 30%;
-                color: #CB9263;
-                background-color: #CB9263;
-                border: 0;
-                height: 1px;
-            }
-            
-            .gallery_titles{
-                margin-left: 3%;
-                margin-top: 8%;
-            }
-            
-            .gallery{
-                display: grid;
-                grid-template-columns: repeat(6, 15vw);
-                grid-template-rows: repeat(3, 25vh);
-                grid-gap: 2vh;
-                gap: 2vh;
-                margin : 2em
-            }
-            .gallery img{
-                display: none;
-            }
-            .custom_made_1{
-                background-image: url('../img/custom_made_1.jpg');
-                background-size: 100%;
-                grid-area: 1/1/3/4;
-                background-repeat: no-repeat;
-            }
-            .custom_made_2{
-                background-image: url('../img/custom_made_2.jpg');
-                background-size: 100%;
-                grid-area: 1/4/2/6;
-                background-repeat: no-repeat;
-            }
-            .custom_made_3{
-                background-image: url('../img/custom_made_3.jpg');
-                background-size: 100%;
-                grid-area: 1/6/2/7;
-                background-repeat: no-repeat;
-            }
-            .custom_made_4{
-                background-image: url('../img/custom_made_4.jpg');
-                background-size: 100%;
-                grid-area: 2/4/3/5;
-                background-repeat: no-repeat;
-            }
-            .custom_made_5{
-                background-image: url('../img/custom_made_5.jpg');
-                background-size: 100%;
-                grid-area: 2/5/3/7;
-                background-repeat: no-repeat;
-            }
-            .custom_made_6{
-                background-image: url('../img/custom_made_6.jpg');
-                background-size: 100%;
-                grid-area: 3/1/4/7;
-                background-repeat: no-repeat;
-            }
-            
-            /* FIN GALERIE */
-            
-            @media screen and (max-width: 470px){
-            h1{
-                margin-top: 100px;
-            }
-            
-            
-                /* FOOTER */
-            footer{
-                padding: 20px 20px;
-            }
-            .text{
-                font-size: 1rem;
-            }
-            .grill-container{
-                grid-template-columns: repeat(2, 60% 35%);
-            
-            }
-            }
+/*-----FIN GALERIE----*/
+@media screen and (max-width: 470px) {
+    h1 {
+        margin-top: 100px;
+    }
+    /* FOOTER */
+    footer {
+        padding: 20px 20px;
+    }
+    .text {
+        font-size: 1rem;
+    }
+    .grill-container {
+        grid-template-columns: repeat(2, 60% 35%);
+    }
+}

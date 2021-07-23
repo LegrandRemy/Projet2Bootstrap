@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test galerie</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/a5a4334cf2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Navbar -->
+
+        <nav class="navbar navbar-expand-lg navbar-light colornav row">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="logo">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo.png" class="image-fluid" alt="">
+                    <!--image fluide rend l'image nette-->
+                </a>
+            </div>
+            <div class="collapse navbar-collapse row " id="navbarNav">
+                <ul class="navbar-nav col-12 justify-content-end">
+                    <li class="nav-item active ml-5 mr-5 ">
+                        <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ml-5 mr-5 ">
+                        <a class="nav-link" href="creations.html">Notre mobilier</a>
+                    </li>
+                    <li class="nav-item ml-5 mr-5 ">
+                        <a class="nav-link" href="lesmateriaux.html">Les materiaux</a>
+                    </li>
+                    <li class="nav-item ml-5 mr-5 ">
+                        <a class="nav-link" href="formulaire.html">Contactez-nous</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Fin Navbar -->
+        <!-- Background image -->
+        <div class="card pt-5 mb-5 mt-5 border-0 valor_card">
+            <div class="row no-gutters">
+                <div class="col mb-5 mt-5">
+                    <div class="card-body mt-5 mb-5">
+                        <h3 class="card-title titre_valeur mt-5 ml-5 pl-5 justify-content-center align-items-sm-center">
+                            Contactez-nous
+                            <hr class="col-8">
+                        </h3>
+                        <p class="card-text pl-3 mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+                            sapiente aliquam incidunt ab at nesciunt dolor debitis ad laudantium corrupti exercitationem
+                            ut similique tenetur ipsam quae, deleniti magni accusantium aliquid?Lorem ipsum dolor sit,
+                            amet consectetur adipisicing elit. Odio animi hic deserunt, nam expedita in nobis, sapiente
+                            facere porro necessitatibus repellendus aspernatur perspiciatis est tempore. Dolore odit
+                            ratione facere aliquam!</p>
+
+                    </div>
+                </div>
+                <div class="col-4 ml-5 mr-5">
+                    <img src="assets/img/femme.jpg" class="col-12 p-0" alt="contact">
+                </div>
+            </div>
+        </div>
+        <!--Fin Background image -->
+
+
+        <div class="row">
+            <form class="col-5 ml-5 mb-5 mr-5 colorform p-4 rounded">
+                <div class="form-group h4 text-white">
+                    <label for="exampleFormControlInput1">Nom :</label>
+                    <input type="Name" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
+                </div>
+
+                <div class="form-group h4 text-white">
+                    <label for="exampleFormControlInput1">Email :</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="form-group h4 text-white">
+                    <label for="exampleFormControlInput1">Téléphone :</label>
+                    <input type="Name" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="form-group h4 text-white">
+                    <label for="exampleFormControlInput1">Sujet de votre message</label>
+                    <input type="Name" class="form-control" id="exampleFormControlInput1">
+                </div>
+
+                <div class="form-group h4 text-white">
+                    <label for="exampleFormControlTextarea1">Message :</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-light submitbtn col-3" data-toggle="modal" data-target="#exampleModal">
+                    Envoyer
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-body">
+                                Votre message a bien été envoyé
+                            </div>
+                            <div class="modal-footer d-flex justify-content-around">
+                                <a class="nav-link colornav submitbtn rounded w-25 text-center text-white"
+                                    href="index.html">Accueil <span class="sr-only">(current)</span></a>
+                                <button type="button" class="btn colornav submitbtn w-25 text-white"
+                                    data-dismiss="modal">Close</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="ml-5 col-sm-6 col-lg-5">
+                <div class="card w-75">
+                  <div class="card-body ">
+                    <h4 class="card-title h1">Adresse :</h4>
+                    <p class="card-text text-center h3">70 Rue des Jacobins<br>80000 AMIENS<br>Somme / Picardie / France</p>
+                  </div>
+                  <div class="card-body ">
+                    <h4 class="card-title h1">Contact :</h4>
+                    <p class="card-text h3">E-mail : Björk@gmail.com<br>Téléphone : 06 12 34 56 78</p>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+
+
+        <footer class='row'>
+            <div class="grill-container col-12">
+                <div>
+                    <p class="text text-white">© Sophie Tonnellier, Clara Guerville, René Hallé.<br>
+                        Mentions légales
+                    </p>
+                </div>
+                <div class="footer social-network">
+                    <i class="fab fa-pinterest fa-2x col-6"></i> <i class="fab fa-instagram fa-2x col-6"></i> <i
+                        class="fab fa-facebook-f fa-2x col-6"></i>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- JS/Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
